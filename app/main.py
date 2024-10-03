@@ -1,7 +1,8 @@
-#streamlit web file
+rea#streamlit web file
 
 import streamlit as st
 from streamlit_option_menu import option_menu
+from Home_page import Home_page 
 
 st.set_page_config(
     layout="wide",
@@ -17,3 +18,6 @@ with st.sidebar:
         menu_icon ="cast",
         default_index = 0
     )
+if selected =="Home":
+   Home_page()
+   
